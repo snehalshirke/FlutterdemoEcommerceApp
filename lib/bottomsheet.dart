@@ -61,27 +61,28 @@ class BottomSheetExample extends StatelessWidget {
                           height: 100,
                           width: 100,
                         ),
-                        SizedBox(height: 16),
-                        Text(
+                        const SizedBox(height: 16),
+                        const Text(
                           'Welcome To Powerlook',
                           style: TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        SizedBox(height: 8),
-                        Text(
+                        const SizedBox(height: 8),
+                        const Text(
                           'To kickstart your journey with, \nhere a special offer just for you',
                           style: TextStyle(fontSize: 14),
                         ),
-                        Divider(
+                        const Divider(
                           height: 20.0,
                           thickness: 3.0,
                           color: Colors.black,
                           indent: 25.0,
                           endIndent: 25.0,
                         ),
-                        SizedBox(height: 20),
+                        const SizedBox(height: 20),
+                        // ignore: sized_box_for_whitespace
                         Container(
                           width: double.infinity,
                           child: ElevatedButton(
@@ -92,12 +93,12 @@ class BottomSheetExample extends StatelessWidget {
                             style: ButtonStyle(
                               padding:
                                   MaterialStateProperty.all<EdgeInsetsGeometry>(
-                                EdgeInsets.symmetric(
+                                const EdgeInsets.symmetric(
                                     vertical: 10,
                                     horizontal: 16), // Adjust padding as needed
                               ),
                             ),
-                            child: Text('Get my surprise'),
+                            child: const Text('Get my surprise'),
                           ),
                         )
                       ],
@@ -107,7 +108,7 @@ class BottomSheetExample extends StatelessWidget {
               },
             );
           },
-          child: Text('Open Custom BottomSheet'),
+          child: const Text('Open Custom BottomSheet'),
         ),
       ),
     );
