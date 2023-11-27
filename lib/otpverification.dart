@@ -66,14 +66,17 @@ class _OtpverificationWidgetState extends State<OtpverificationWidget> {
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Image.network(
-                      'https://images.yourstory.com/cs/images/companies/Powerlook1-1650868940555.jpg', // Replace with your logo URL
+                    Image.asset(
+                      'assets/images/logo.png',
                       width: 30,
                       height: 30,
                     ),
-                    const SizedBox(height: 4),
+                    const SizedBox(
+                      height: 4,
+                      width: 15,
+                    ),
                     const Text(
-                      "Powerlook",
+                      "LOGO",
                       style: TextStyle(
                         fontSize: 22,
                         color: Colors.black,

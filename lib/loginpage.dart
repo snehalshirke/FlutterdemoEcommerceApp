@@ -26,17 +26,17 @@ class _MyWidgetState extends State<MyWidget> {
                     // Logo and Title
                     Row(
                       children: [
-                        Image.network(
-                          'https://images.yourstory.com/cs/images/companies/Powerlook1-1650868940555.jpg',
-                          width: 20,
-                          height: 20,
+                        Image.asset(
+                          'assets/images/logo.png',
+                          width: 30,
+                          height: 30,
                         ),
                         const SizedBox(
                           width: 5,
                           height: 80,
                         ),
                         const Text(
-                          'Powerlook',
+                          'LOGO',
                           style: TextStyle(
                             color: Colors.black,
                             fontSize: 20,
@@ -138,8 +138,7 @@ class _MyWidgetState extends State<MyWidget> {
                               ),
                               children: [
                                 TextSpan(
-                                  text:
-                                      'By continuing, you agree to Powerlook\'s\n',
+                                  text: 'By continuing, you agree to our\'s\n',
                                   style: TextStyle(
                                     color: Colors.black,
                                     fontSize: 14,

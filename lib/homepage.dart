@@ -29,14 +29,14 @@ class _HomeWidgetState extends State<HomeWidget> {
                     // Brand Logo and Name
                     Row(
                       children: [
-                        Image.network(
-                          'https://images.yourstory.com/cs/images/companies/Powerlook1-1650868940555.jpg',
-                          height: 20,
-                          width: 20,
+                        Image.asset(
+                          'assets/images/logo.png',
+                          width: 30,
+                          height: 30,
                         ),
                         const SizedBox(width: 10),
                         const Text(
-                          'Powerlook',
+                          'LOGO',
                           style: TextStyle(
                             color: Colors.black,
                             fontWeight: FontWeight.w600,

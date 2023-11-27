@@ -27,7 +27,7 @@ class BottomSheetExample extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Custom BottomSheet'),
+        title: const Text('Custom BottomSheet'),
       ),
       body: Center(
         child: ElevatedButton(
@@ -38,24 +38,24 @@ class BottomSheetExample extends StatelessWidget {
               builder: (BuildContext context) {
                 return FractionallySizedBox(
                   child: Container(
-                    padding: EdgeInsets.all(16),
+                    padding: const EdgeInsets.all(16),
                     width: double.infinity, // Make width match parent
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                       children: <Widget>[
-                        SizedBox(height: 4),
+                        const SizedBox(height: 4),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: [
                             IconButton(
-                              icon: Icon(Icons.cancel),
+                              icon: const Icon(Icons.cancel),
                               onPressed: () {
                                 Navigator.pop(context);
                               },
                             ),
                           ],
                         ),
-                        SizedBox(height: 0),
+                        const SizedBox(height: 0),
                         Image.asset(
                           'assets/images/delete.png', // Replace with your image path
                           height: 100,
@@ -63,7 +63,7 @@ class BottomSheetExample extends StatelessWidget {
                         ),
                         const SizedBox(height: 16),
                         const Text(
-                          'Welcome To Powerlook',
+                          'Welcome To LOGO',
                           style: TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.bold,
